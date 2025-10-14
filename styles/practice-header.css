@@ -1,0 +1,43 @@
+.header {
+   
+    display: flex; 
+     background-color: beige;
+    justify-content: space-between;
+}
+
+.middle-section {
+  background-color: lightgreen;
+   display: flex; 
+   flex: 1;
+}
+.search-bar-container {
+    display: flex;
+    flex: 1;
+   justify-content: center;
+}
+.search-bar {
+    background-color:lightpink;
+   flex: 1;
+   display: flex;}
+
+   .search-buttons-container {
+    display: flex;
+   }
+
+   .voice-search-button {
+    display: flex;
+   }
+
+.left-section {
+    background-color: lightblue;
+    display: flex;
+}
+
+.right-section {
+    background-color: lightblue;
+    display: flex;
+}
+
+
+
+
