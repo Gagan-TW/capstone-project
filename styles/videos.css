@@ -68,7 +68,8 @@
         .parent-div {
         
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr
+            ;
             column-gap: 20px;
             row-gap: 40px;
         }
@@ -89,8 +90,15 @@
             body {
                 padding-left: 20px;
             }
+            
         }
-        .thumbnail-container {
+
+        @media (min-width: 1000px) {
+            .parent-div {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            }
+            .thumbnail-container {
             position: relative;
             z-index: -1;
         }
