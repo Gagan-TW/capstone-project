@@ -50,6 +50,7 @@
     border-style: solid;
     border-width: 1px;
     border-color: rgb(204, 204, 204);
+    cursor: pointer;
 }
 .voice-search-button { 
     height: 40px;
@@ -57,8 +58,17 @@
     background-color: rgb(248, 248, 248);
     border-radius: 20px;
     border: none;
-    margin-left: 10px;
+    
+    
+   
 
+}
+
+.voice-search-button, .search-button {
+position: relative;
+display: flex;
+align-items: center;
+justify-items: center;
 }
 
 .voice-search-icon {
@@ -117,3 +127,24 @@
     border-radius: 16px;
     
 }
+
+.search-button .tooltip, 
+.voice-search-button .tooltip {
+position: absolute;
+background-color: gray;
+color: white;
+padding: 4px 8px;
+font-size: 12px;
+border-radius: 2px;
+bottom: -30px;
+opacity: 0;
+transition: opacity 0.15s;
+white-space: nowrap;
+
+}
+
+.search-button:hover .tooltip, 
+.voice-search-button:hover .tooltip {
+    opacity: 1;
+}
+
